@@ -15,7 +15,7 @@ const Navbar = ({ selectedCategory, onCategoryChange }: NavbarProps) => {
   
   const isHomePage = location.pathname === "/";
   
-  const categories = ["everything", ...getCategories().slice(0, 4)];
+  const categories = ["Selected work", "Archive"];
 
   useEffect(() => {
     const handleScroll = () => {
