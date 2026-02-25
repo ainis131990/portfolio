@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import Navbar from "@/components/Navbar";
 import FloatingNav from "@/components/FloatingNav";
+import ScrollRevealText from "@/components/ScrollRevealText";
 
 const ProjectIndex = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Selected work");
@@ -46,8 +47,18 @@ const ProjectIndex = () => {
           onCategoryChange={setSelectedCategory}
         />
         
+        {/* Hero Bio Section - matching About page spacing */}
+        <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-6 pt-24 pb-8">
+          <div className="max-w-[95%]">
+            <ScrollRevealText 
+              text="Jordan Studio is an independent creative practice focused on graphic design, art direction, and visual identity systems that communicate with clarity and purpose."
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] font-display"
+            />
+          </div>
+        </section>
+
         {/* Project Grid */}
-        <section ref={sectionRef} className="pt-96 md:pt-72 pb-24 px-6">
+        <section ref={sectionRef} className="pt-6 pb-24 px-6">
           {/* Mobile: Pinterest-style 2-column grid with equal sizes */}
           <div className="grid grid-cols-2 gap-3 md:hidden">
             {filteredProjects.map((project, index) => (
