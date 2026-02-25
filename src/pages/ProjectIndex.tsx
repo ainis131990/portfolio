@@ -47,7 +47,7 @@ const ProjectIndex = () => {
         />
         
         {/* Project Grid */}
-        <section ref={sectionRef} className="pt-32 md:pt-24 pb-24 px-6">
+        <section ref={sectionRef} className="pt-96 md:pt-72 pb-24 px-6">
           {/* Mobile: Pinterest-style 2-column grid with equal sizes */}
           <div className="grid grid-cols-2 gap-3 md:hidden">
             {filteredProjects.map((project, index) => (
