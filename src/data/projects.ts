@@ -26,7 +26,7 @@ export const projects: Project[] = [
     id: "chromatic-dreams",
     title: "Port of Riga",
     tags: ["illustration", "digital art", "abstract"],
-    subtitle: "Transform the brand for international growth",
+    subtitle: "Transforming the brand for international growth",
     description: "A series of digital illustrations exploring the interaction between geometric shapes and vibrant colors. The project emerged from a desire to translate emotions into abstract visual compositions, where each piece represents a different emotional state through specific chromatic palettes.",
     year: "2024",
     client: "Personal Project",
