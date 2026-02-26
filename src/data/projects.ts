@@ -110,7 +110,7 @@ export const projects: Project[] = [
   },
   {
     id: "flow-magazine",
-    title: "Flow Magazine",
+    title: "BluOr Bank",
     tags: ["editorial", "magazine", "lifestyle"],
     description: "Editorial design for Flow magazine, a publication about mindfulness and well-being. The project involved creating a visual system that conveys calm and balance through generous spacing, elegant typography, and contemplative photography.",
     year: "2023",
