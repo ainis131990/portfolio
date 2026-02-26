@@ -23,7 +23,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "chromatic-dreams",
-    title: "Chromatic Dreams",
+    title: "Port of Riga",
     tags: ["illustration", "digital art", "abstract"],
     description: "A series of digital illustrations exploring the interaction between geometric shapes and vibrant colors. The project emerged from a desire to translate emotions into abstract visual compositions, where each piece represents a different emotional state through specific chromatic palettes.",
     year: "2024",
