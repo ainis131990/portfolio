@@ -86,7 +86,7 @@ const ProjectIndex = () => {
                     {project.title}
                   </h3>
                   <p className="text-[10px] text-muted-foreground mt-0.5 line-clamp-1">
-                    {project.tags.slice(0, 2).map((tag) => `#${tag}`).join(" ")}
+                    {project.subtitle || project.tags.slice(0, 2).map((tag) => `#${tag}`).join(" ")}
                   </p>
                 </div>
               </Link>
@@ -120,7 +120,7 @@ const ProjectIndex = () => {
                     {project.title}
                   </h3>
                   <p className="text-xs text-muted-foreground mt-0.5">
-                    {project.tags.map((tag) => `#${tag}`).join(" ")}
+                    {project.subtitle || project.tags.map((tag) => `#${tag}`).join(" ")}
                   </p>
                 </div>
               </Link>
