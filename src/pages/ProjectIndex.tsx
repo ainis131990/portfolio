@@ -51,7 +51,7 @@ const ProjectIndex = () => {
         <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-6 pt-24 pb-8">
           <div className="max-w-[95%]">
             <ScrollRevealText 
-              text="Latvia based art director focused on branding that communicate with clarity and purpose."
+              text="Art director based in Latvia, specializing in brand identities built on clarity and purpose."
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] font-display"
             />
           </div>
