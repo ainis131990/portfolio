@@ -96,7 +96,7 @@ const Project = () => {
                   // Two side-by-side
                   if (i + 1 < galleryImages.length) {
                     rows.push(
-                      <div key={`row-${i}`} className="grid grid-cols-2 gap-4">
+                      <div key={`row-${i}`} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div
                           className="overflow-hidden rounded-xl fade-in-up"
                           style={{ animationDelay: `${(i + 4) * 100}ms` }}
