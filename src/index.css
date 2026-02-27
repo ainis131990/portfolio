@@ -86,10 +86,6 @@
     @apply transition-transform duration-700 ease-out;
   }
 
-  .project-card:hover img {
-    @apply scale-105;
-  }
-
   .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
