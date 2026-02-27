@@ -68,20 +68,84 @@ const Project = () => {
         {/* Gallery */}
         <section className="py-6 px-6">
           <div className="space-y-4">
-            {project.images.slice(1).map((image, index) => (
-              <div
-                key={index}
-                className="w-full overflow-hidden rounded-xl fade-in-up"
-                style={{ animationDelay: `${(index + 4) * 100}ms` }}
-              >
-                <img
-                  src={image}
-                  alt={`${project.title} - ${index + 2}`}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+            {(() => {
+              const galleryImages = project.images.slice(1);
+              const rows: React.ReactNode[] = [];
+              let i = 0;
+              let rowIndex = 0;
+
+              while (i < galleryImages.length) {
+                if (rowIndex % 2 === 0) {
+                  // Full width row
+                  rows.push(
+                    <div
+                      key={`row-${i}`}
+                      className="w-full overflow-hidden rounded-xl fade-in-up"
+                      style={{ animationDelay: `${(i + 4) * 100}ms` }}
+                    >
+                      <img
+                        src={galleryImages[i]}
+                        alt={`${project.title} - ${i + 2}`}
+                        className="w-full h-auto object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  );
+                  i += 1;
+                } else {
+                  // Two side-by-side
+                  if (i + 1 < galleryImages.length) {
+                    rows.push(
+                      <div key={`row-${i}`} className="grid grid-cols-2 gap-4">
+                        <div
+                          className="overflow-hidden rounded-xl fade-in-up"
+                          style={{ animationDelay: `${(i + 4) * 100}ms` }}
+                        >
+                          <img
+                            src={galleryImages[i]}
+                            alt={`${project.title} - ${i + 2}`}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div
+                          className="overflow-hidden rounded-xl fade-in-up"
+                          style={{ animationDelay: `${(i + 5) * 100}ms` }}
+                        >
+                          <img
+                            src={galleryImages[i + 1]}
+                            alt={`${project.title} - ${i + 3}`}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    );
+                    i += 2;
+                  } else {
+                    // Only one image left, show full width
+                    rows.push(
+                      <div
+                        key={`row-${i}`}
+                        className="w-full overflow-hidden rounded-xl fade-in-up"
+                        style={{ animationDelay: `${(i + 4) * 100}ms` }}
+                      >
+                        <img
+                          src={galleryImages[i]}
+                          alt={`${project.title} - ${i + 2}`}
+                          className="w-full h-auto object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    );
+                    i += 1;
+                  }
+                }
+                rowIndex++;
+              }
+
+              return rows;
+            })()}
           </div>
         </section>
 
