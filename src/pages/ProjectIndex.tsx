@@ -56,7 +56,7 @@ const ProjectIndex = () => {
         </section>
 
         {/* Project Grid */}
-        <section ref={sectionRef} className="pt-6 pb-24 px-3">
+        <section ref={sectionRef} className="pt-6 pb-24">
           {/* Mobile grid */}
           <div className={`grid ${selectedCategory === "Archive" ? "grid-cols-2" : "grid-cols-1"} gap-2 md:hidden`}>
             {filteredProjects.map((project, index) => {
