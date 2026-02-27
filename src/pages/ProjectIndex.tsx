@@ -50,7 +50,7 @@ const ProjectIndex = () => {
           <div className="max-w-[95%]">
             <ScrollRevealText 
               text="Art director based in Latvia, specializing in brand identities built on clarity and purpose."
-              className="text-xs md:text-sm leading-[1.4] font-display"
+              className="text-lg font-medium tracking-tight leading-[1.4]"
             />
           </div>
         </section>

@@ -55,7 +55,7 @@ const About = () => {
           <div className="max-w-[95%]">
             <ScrollRevealText 
               text="Jordan Studio is an independent creative practice focused on graphic design, art direction, and visual identity systems that communicate with clarity and purpose."
-              className="text-xs md:text-sm leading-[1.4] font-display"
+              className="text-lg font-medium tracking-tight leading-[1.4]"
             />
           </div>
         </section>
