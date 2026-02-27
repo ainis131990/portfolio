@@ -96,9 +96,9 @@ const Project = () => {
                   // Two side-by-side
                   if (i + 1 < galleryImages.length) {
                     rows.push(
-                      <div key={`row-${i}`} className="grid grid-cols-2 gap-4">
+                      <div key={`row-${i}`} className="grid grid-cols-5 gap-4">
                         <div
-                          className="overflow-hidden rounded-xl fade-in-up"
+                          className="col-span-3 overflow-hidden rounded-xl fade-in-up"
                           style={{ animationDelay: `${(i + 4) * 100}ms` }}
                         >
                           <img
@@ -109,7 +109,7 @@ const Project = () => {
                           />
                         </div>
                         <div
-                          className="overflow-hidden rounded-xl fade-in-up"
+                          className="col-span-2 overflow-hidden rounded-xl fade-in-up"
                           style={{ animationDelay: `${(i + 5) * 100}ms` }}
                         >
                           <img
