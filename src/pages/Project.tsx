@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getProjectById } from "@/data/projects";
+import { getProjectById, projects } from "@/data/projects";
 import Navbar from "@/components/Navbar";
 import FloatingNav from "@/components/FloatingNav";
 
@@ -141,6 +141,36 @@ className="w-full overflow-hidden fade-in-up"
             })()}
           </div>
         </section>
+
+        {/* Next/Previous Project */}
+        {(() => {
+          const currentIndex = projects.findIndex(p => p.id === id);
+          const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
+          const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+
+          return (
+            <section className="pb-24 px-3">
+              <div className="flex justify-between items-center border-t border-border pt-6">
+                <div>
+                  {prevProject && (
+                    <Link to={`/project/${prevProject.id}`} className="group">
+                      <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Previous</span>
+                      <p className="text-xs md:text-sm font-medium group-hover:text-muted-foreground transition-colors">{prevProject.title}</p>
+                    </Link>
+                  )}
+                </div>
+                <div className="text-right">
+                  {nextProject && (
+                    <Link to={`/project/${nextProject.id}`} className="group">
+                      <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Next</span>
+                      <p className="text-xs md:text-sm font-medium group-hover:text-muted-foreground transition-colors">{nextProject.title}</p>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </section>
+          );
+        })()}
 
       </main>
       <FloatingNav />
