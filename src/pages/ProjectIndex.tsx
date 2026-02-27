@@ -57,8 +57,8 @@ const ProjectIndex = () => {
 
         {/* Project Grid */}
         <section ref={sectionRef} className="pt-6 pb-24 px-6">
-          {/* Mobile: Pinterest-style 2-column grid with equal sizes */}
-          <div className="grid grid-cols-2 gap-3 md:hidden">
+          {/* Mobile grid */}
+          <div className={`grid ${selectedCategory === "Archive" ? "grid-cols-2" : "grid-cols-1"} gap-3 md:hidden`}>
             {filteredProjects.map((project, index) => {
               const Wrapper = selectedCategory === "Archive" ? "div" : Link;
               const wrapperProps = selectedCategory === "Archive"
@@ -77,7 +77,7 @@ const ProjectIndex = () => {
                   }`}
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
-                  <div className="relative overflow-hidden rounded-2xl bg-muted aspect-[4/5]">
+                  <div className={`relative overflow-hidden rounded-2xl bg-muted ${selectedCategory === "Archive" ? "aspect-[4/5]" : "aspect-[16/9]"}`}>
                     <img
                       src={project.images[0]}
                       alt={project.title}
@@ -85,7 +85,6 @@ const ProjectIndex = () => {
                       loading="lazy"
                     />
                   </div>
-
                   <div className="pt-2 pb-3">
                     <h3 className="text-xs font-medium group-hover:opacity-70 transition-opacity duration-300 line-clamp-1">
                       {project.title}
@@ -100,7 +99,7 @@ const ProjectIndex = () => {
           </div>
 
           {/* Desktop layout */}
-          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-2"} gap-4`}>
+          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-1"} gap-4`}>
             {filteredProjects.map((project, index) => {
               const Wrapper = selectedCategory === "Archive" ? "div" : Link;
               const wrapperProps = selectedCategory === "Archive" 
@@ -119,11 +118,11 @@ const ProjectIndex = () => {
                   }`}
                   style={{ transitionDelay: `${index * 80}ms` }}
                 >
-                  <div className="relative overflow-hidden rounded-3xl bg-muted">
+                  <div className={`relative overflow-hidden rounded-3xl bg-muted ${selectedCategory === "Archive" ? "" : "aspect-[16/9]"}`}>
                     <img
                       src={project.images[0]}
                       alt={project.title}
-                      className="w-full h-auto object-cover"
+                      className={`w-full object-cover ${selectedCategory === "Archive" ? "h-auto" : "h-full"}`}
                       loading="lazy"
                     />
                   </div>
