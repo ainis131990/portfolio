@@ -76,7 +76,7 @@ const About = () => {
 
             {/* Selected Clients */}
             <div>
-              <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
+              <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
                 Selected Clients
               </h3>
               <ul className="space-y-1">
@@ -90,7 +90,7 @@ const About = () => {
 
             {/* Services */}
             <div>
-              <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
+              <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
                 Services
               </h3>
               <ul className="space-y-1">
@@ -104,7 +104,7 @@ const About = () => {
 
             {/* Contact */}
             <div>
-              <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
+              <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
                 Say Hi!
               </h3>
               <div className="space-y-2">
