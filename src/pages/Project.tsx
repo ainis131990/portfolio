@@ -44,7 +44,7 @@ const Project = () => {
 
         {/* Hero Image */}
         <section className="pt-20 px-2 md:px-3">
-          <div className="w-full overflow-hidden rounded-xl fade-in-up">
+          <div className="w-full overflow-hidden fade-in-up">
             <img
               src={project.images[0]}
               alt={project.title}
@@ -80,7 +80,7 @@ const Project = () => {
                   rows.push(
                     <div
                       key={`row-${i}`}
-                      className="w-full overflow-hidden rounded-xl fade-in-up"
+className="w-full overflow-hidden fade-in-up"
                       style={{ animationDelay: `${(i + 4) * 100}ms` }}
                     >
                       <img
@@ -98,7 +98,7 @@ const Project = () => {
                     rows.push(
                       <div key={`row-${i}`} className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         <div
-                          className="overflow-hidden rounded-xl fade-in-up"
+className="overflow-hidden fade-in-up"
                           style={{ animationDelay: `${(i + 4) * 100}ms` }}
                         >
                           <img
@@ -109,7 +109,7 @@ const Project = () => {
                           />
                         </div>
                         <div
-                          className="overflow-hidden rounded-xl fade-in-up"
+className="overflow-hidden fade-in-up"
                           style={{ animationDelay: `${(i + 5) * 100}ms` }}
                         >
                           <img
@@ -127,13 +127,13 @@ const Project = () => {
                     rows.push(
                       <div
                         key={`row-${i}`}
-                        className="w-full overflow-hidden rounded-xl fade-in-up"
-                        style={{ animationDelay: `${(i + 4) * 100}ms` }}
-                      >
-                        <img
-                          src={galleryImages[i]}
-                          alt={`${project.title} - ${i + 2}`}
-                          className="w-full h-auto object-cover"
+className="w-full overflow-hidden fade-in-up"
+                      style={{ animationDelay: `${(i + 4) * 100}ms` }}
+                    >
+                      <img
+                        src={galleryImages[i]}
+                        alt={`${project.title} - ${i + 2}`}
+                        className="w-full h-auto object-cover"
                           loading="lazy"
                         />
                       </div>
