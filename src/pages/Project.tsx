@@ -95,10 +95,10 @@ const Project = () => {
               >
                 <ArrowLeft className="w-4 h-4 group-hover:-translate-x-2 transition-transform duration-300" />
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                  <p className="text-xs md:text-sm text-muted-foreground">
                     Previous
                   </p>
-                  <p className="text-sm">
+                  <p className="text-xs md:text-sm">
                     {prevProject.title}
                   </p>
                 </div>
@@ -113,10 +113,10 @@ const Project = () => {
                 className="group flex items-center gap-3 text-right hover:opacity-70 transition-opacity duration-300"
               >
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                  <p className="text-xs md:text-sm text-muted-foreground">
                     Next
                   </p>
-                  <p className="text-sm">
+                  <p className="text-xs md:text-sm">
                     {nextProject.title}
                   </p>
                 </div>
