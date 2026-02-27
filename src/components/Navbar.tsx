@@ -99,7 +99,7 @@ const Navbar = ({ selectedCategory, onCategoryChange }: NavbarProps) => {
                   className={`px-4 py-2 text-sm rounded-full whitespace-nowrap transition-all duration-300 ${
                     selectedCategory === category
                       ? "bg-foreground/15 text-foreground backdrop-blur-md"
-                      : "bg-muted text-muted-foreground"
+                      : "text-muted-foreground"
                   }`}
                 >
                   {category}
