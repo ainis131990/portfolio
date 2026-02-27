@@ -28,7 +28,10 @@ export const projects: Project[] = [
     images: [
       spheresImg,
       "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&q=80"
+      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&q=80",
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+      "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=800&q=80",
+      "https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?w=800&q=80"
     ],
     color: "#FF6B6B",
     aspectRatio: "portrait"
