@@ -86,7 +86,7 @@ const ProjectIndex = () => {
                     />
                   </div>
                   <div className="pt-2 pb-3">
-                    <h3 className="text-xs font-medium group-hover:opacity-70 transition-opacity duration-300 line-clamp-1">
+                    <h3 className={`text-xs font-medium ${selectedCategory !== "Archive" ? "group-hover:opacity-70" : ""} transition-opacity duration-300 line-clamp-1`}>
                       {project.title}
                     </h3>
                     <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
@@ -128,7 +128,7 @@ const ProjectIndex = () => {
                   </div>
 
                   <div className="pt-3 pb-4">
-                    <h3 className="text-sm font-medium group-hover:opacity-70 transition-opacity duration-300">
+                    <h3 className={`text-sm font-medium ${selectedCategory !== "Archive" ? "group-hover:opacity-70" : ""} transition-opacity duration-300`}>
                       {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mt-0.5">
