@@ -44,12 +44,6 @@ const About = () => {
     "Packaging"
   ];
 
-  const recognition = [
-    { award: "ADG Brasil Award", year: "2024" },
-    { award: "Type Directors Club", year: "2023" },
-    { award: "Cannes Lions Bronze", year: "2022" },
-  ];
-
   const socialLinks = [
     { name: "Instagram", icon: Instagram, url: "https://instagram.com" },
     { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com" },
@@ -74,6 +68,17 @@ const About = () => {
         {/* Bottom Info Section - Horizontal Layout */}
         <section className="px-6 pb-32" id="contact">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 fade-in-up">
+            {/* Profile Picture */}
+            <div className="flex items-start justify-center md:justify-start">
+              <div className="w-32 h-32 rounded-full overflow-hidden bg-muted border border-border">
+                <img
+                  src="/placeholder.svg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
             {/* Selected Clients */}
             <div>
               <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
@@ -97,21 +102,6 @@ const About = () => {
                 {services.map((service) => (
                   <li key={service} className="text-sm">
                     {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Recognition */}
-            <div>
-              <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4 border-b border-border pb-2">
-                Recognition
-              </h3>
-              <ul className="space-y-1">
-                {recognition.map((item) => (
-                  <li key={item.award} className="text-sm flex justify-between gap-4">
-                    <span>{item.award}</span>
-                    <span className="text-muted-foreground">{item.year}</span>
                   </li>
                 ))}
               </ul>
