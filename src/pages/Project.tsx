@@ -44,7 +44,7 @@ const Project = () => {
 
         {/* Hero Image */}
         <section className="pt-20 px-4 md:px-6">
-          <div className="w-full h-[40vh] md:h-[80vh] overflow-hidden rounded-2xl md:rounded-3xl fade-in-up">
+          <div className="w-full h-[40vh] md:h-[80vh] overflow-hidden rounded-xl md:rounded-xl fade-in-up">
             <img
               src={project.images[0]}
               alt={project.title}
@@ -102,7 +102,7 @@ const Project = () => {
             {project.images.slice(1).map((image, index) => (
               <div
                 key={index}
-                className="w-full overflow-hidden rounded-3xl fade-in-up"
+                className="w-full overflow-hidden rounded-xl fade-in-up"
                 style={{ animationDelay: `${(index + 4) * 100}ms` }}
               >
                 <img
