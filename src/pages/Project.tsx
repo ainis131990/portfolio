@@ -44,11 +44,11 @@ const Project = () => {
 
         {/* Hero Image */}
         <section className="pt-20 px-4 md:px-6">
-          <div className="w-full h-[40vh] md:h-[80vh] overflow-hidden rounded-xl md:rounded-xl fade-in-up">
+          <div className="w-full overflow-hidden rounded-xl fade-in-up">
             <img
               src={project.images[0]}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
           </div>
         </section>
