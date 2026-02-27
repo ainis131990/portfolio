@@ -65,20 +65,6 @@ export const projects: Project[] = [
     aspectRatio: "portrait"
   },
   {
-    id: "motion-blur",
-    title: "Motion Blur",
-    tags: ["motion", "digital", "animation"],
-    description: "Exploration of movement and time through static imagery that suggests motion. This project captures the essence of speed and fluidity, freezing dynamic moments in visually striking compositions.",
-    year: "2023",
-    client: "Sports Brand",
-    images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=800&q=80"
-    ],
-    color: "#7C3AED",
-    aspectRatio: "landscape"
-  },
-  {
     id: "urban-nature",
     title: "Urban Nature",
     tags: ["branding", "identity", "nature"],
