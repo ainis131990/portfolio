@@ -51,7 +51,7 @@ const About = () => {
         <Navbar />
         
         {/* Hero Bio Section - Takes ~70% of the viewport */}
-        <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-6 pt-24 pb-8">
+        <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-3 pt-24 pb-8">
           <div className="max-w-[95%]">
             <ScrollRevealText 
               text="Jordan Studio is an independent creative practice focused on graphic design, art direction, and visual identity systems that communicate with clarity and purpose."
@@ -61,7 +61,7 @@ const About = () => {
         </section>
 
         {/* Bottom Info Section - Horizontal Layout */}
-        <section className="px-6 pb-32" id="contact">
+        <section className="px-3 pb-32" id="contact">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 fade-in-up">
             {/* Profile Picture */}
             <div className="flex items-start justify-center md:justify-start">
