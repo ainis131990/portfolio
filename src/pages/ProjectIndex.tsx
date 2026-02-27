@@ -86,10 +86,10 @@ const ProjectIndex = () => {
                     />
                   </div>
                   <div className="pt-2 pb-3">
-                    <h3 className={`text-xs font-medium ${selectedCategory !== "Archive" ? "group-hover:opacity-70" : ""} transition-opacity duration-300 line-clamp-1`}>
+                    <h3 className={`text-xs font-medium ${selectedCategory !== "Archive" ? "group-hover:opacity-70" : ""} transition-opacity duration-300`}>
                       {project.title}
                     </h3>
-                    <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
+                    <p className="text-xs text-muted-foreground mt-0.5">
                       {project.subtitle || project.tags.slice(0, 2).map((tag) => `#${tag}`).join(" ")}
                     </p>
                   </div>
