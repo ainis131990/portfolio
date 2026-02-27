@@ -59,9 +59,6 @@ const FloatingNav = () => {
             sideOffset={12}
           >
             <div>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                Say Hi!
-              </p>
               <a 
                 href="mailto:ainis1990@gmail.com"
                 className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity"
