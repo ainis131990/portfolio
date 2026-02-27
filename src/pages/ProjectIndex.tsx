@@ -55,7 +55,7 @@ const ProjectIndex = () => {
         {/* Project Grid */}
         <section ref={sectionRef} className="pt-6 pb-24 px-3">
           {/* Mobile grid */}
-          <div className={`grid ${selectedCategory === "Archive" ? "grid-cols-2 gap-2" : "grid-cols-1 gap-6"} md:hidden`}>
+          <div className={`grid ${selectedCategory === "Archive" ? "grid-cols-2" : "grid-cols-1"} gap-2 md:hidden`}>
             {filteredProjects.map((project, index) => {
               const Wrapper = selectedCategory === "Archive" ? "div" : Link;
               const wrapperProps = selectedCategory === "Archive"
@@ -96,7 +96,7 @@ const ProjectIndex = () => {
           </div>
 
           {/* Desktop layout */}
-          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3 gap-2" : "columns-1 gap-6"}`}>
+          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-1"} gap-2`}>
             {filteredProjects.map((project, index) => {
               const Wrapper = selectedCategory === "Archive" ? "div" : Link;
               const wrapperProps = selectedCategory === "Archive" 
@@ -106,7 +106,7 @@ const ProjectIndex = () => {
                 <Wrapper
                   key={project.id}
                   {...(wrapperProps as any)}
-                  className={`${selectedCategory !== "Archive" ? "project-card" : ""} group block ${selectedCategory === "Archive" ? "mb-4" : "mb-12"} break-inside-avoid transition-all duration-700 ${
+                  className={`${selectedCategory !== "Archive" ? "project-card" : ""} group block mb-4 break-inside-avoid transition-all duration-700 ${
                     selectedCategory !== "Archive" ? "cursor-pointer" : "cursor-default"
                   } ${
                     isVisible
