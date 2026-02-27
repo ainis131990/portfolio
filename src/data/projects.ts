@@ -2,6 +2,8 @@ import holographicImg from "@/assets/simon-lee-holographic.jpg";
 import catImg from "@/assets/syarafina-cat.jpg";
 import spheresImg from "@/assets/victoria-spheres.jpg";
 import birdImg from "@/assets/nypl-bird.jpg";
+import floralImg from "@/assets/kasturi-roy-floral.jpg";
+import deerImg from "@/assets/omk-deer.jpg";
 
 export interface Project {
   id: string;
@@ -78,6 +80,36 @@ export const projects: Project[] = [
     ],
     color: "#10B981",
     aspectRatio: "portrait"
+  },
+  {
+    id: "botanical-forms",
+    title: "Botanical Forms",
+    tags: ["photography", "nature", "editorial"],
+    subtitle: "Exploring organic patterns in flora",
+    description: "A photographic study of botanical structures and their intricate patterns, revealing the hidden geometry of the natural world.",
+    year: "2023",
+    client: "Nature Press",
+    images: [
+      floralImg,
+      "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80"
+    ],
+    color: "#F59E0B",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "silent-observers",
+    title: "Silent Observers",
+    tags: ["photography", "wildlife", "documentary"],
+    subtitle: "Wildlife in their natural habitat",
+    description: "A documentary photography series capturing wildlife in undisturbed moments, exploring the quiet dignity of animals in their natural environments.",
+    year: "2024",
+    client: "Wildlife Foundation",
+    images: [
+      deerImg,
+      "https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=800&q=80"
+    ],
+    color: "#8B5CF6",
+    aspectRatio: "landscape"
   }
 ];
 
