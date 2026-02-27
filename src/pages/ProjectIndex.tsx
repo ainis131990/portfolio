@@ -32,9 +32,7 @@ const ProjectIndex = () => {
       return projects;
     }
     if (selectedCategory === "Archive") {
-      return projects.filter((project) =>
-        project.tags.some((tag) => tag.toLowerCase() === "illustration")
-      );
+      return projects;
     }
     return projects;
   }, [selectedCategory]);
@@ -93,8 +91,8 @@ const ProjectIndex = () => {
             ))}
           </div>
 
-          {/* Desktop: Masonry layout */}
-          <div className="hidden md:block columns-2 gap-4">
+          {/* Desktop layout */}
+          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-2"} gap-4`}>
             {filteredProjects.map((project, index) => (
               <Link
                 key={project.id}

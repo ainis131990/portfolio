@@ -1,6 +1,7 @@
 import holographicImg from "@/assets/simon-lee-holographic.jpg";
 import catImg from "@/assets/syarafina-cat.jpg";
 import spheresImg from "@/assets/victoria-spheres.jpg";
+import birdImg from "@/assets/nypl-bird.jpg";
 
 export interface Project {
   id: string;
@@ -73,6 +74,21 @@ export const projects: Project[] = [
     ],
     color: "#7C3AED",
     aspectRatio: "landscape"
+  },
+  {
+    id: "urban-nature",
+    title: "Urban Nature",
+    tags: ["branding", "identity", "nature"],
+    subtitle: "Bridging urban design with natural elements",
+    description: "A branding project that explores the harmony between urban architecture and natural forms, creating a visual identity that celebrates the coexistence of city life and nature.",
+    year: "2024",
+    client: "Urban Studio",
+    images: [
+      birdImg,
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80"
+    ],
+    color: "#10B981",
+    aspectRatio: "portrait"
   }
 ];
 
