@@ -46,7 +46,7 @@ const ProjectIndex = () => {
         />
         
         {/* Hero Bio Section - matching About page spacing */}
-        <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-6 pt-24 pb-8">
+        <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-3 pt-24 pb-8">
           <div className="max-w-[95%]">
             <ScrollRevealText 
               text="Art director based in Latvia, specializing in brand identities built on clarity and purpose."
@@ -56,9 +56,9 @@ const ProjectIndex = () => {
         </section>
 
         {/* Project Grid */}
-        <section ref={sectionRef} className="pt-6 pb-24 px-6">
+        <section ref={sectionRef} className="pt-6 pb-24 px-3">
           {/* Mobile grid */}
-          <div className={`grid ${selectedCategory === "Archive" ? "grid-cols-2" : "grid-cols-1"} gap-3 md:hidden`}>
+          <div className={`grid ${selectedCategory === "Archive" ? "grid-cols-2" : "grid-cols-1"} gap-2 md:hidden`}>
             {filteredProjects.map((project, index) => {
               const Wrapper = selectedCategory === "Archive" ? "div" : Link;
               const wrapperProps = selectedCategory === "Archive"
@@ -99,7 +99,7 @@ const ProjectIndex = () => {
           </div>
 
           {/* Desktop layout */}
-          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-1"} gap-4`}>
+          <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-1"} gap-2`}>
             {filteredProjects.map((project, index) => {
               const Wrapper = selectedCategory === "Archive" ? "div" : Link;
               const wrapperProps = selectedCategory === "Archive" 

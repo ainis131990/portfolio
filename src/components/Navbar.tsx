@@ -46,7 +46,7 @@ const Navbar = ({ selectedCategory, onCategoryChange }: NavbarProps) => {
             : "bg-transparent"
         }`}
       >
-        <div className="px-6">
+        <div className="px-3">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link
@@ -91,7 +91,7 @@ const Navbar = ({ selectedCategory, onCategoryChange }: NavbarProps) => {
       {isHomePage && onCategoryChange && (
         <div className="fixed top-16 left-0 right-0 z-40 bg-background/95 backdrop-blur-sm md:hidden">
           <div className="overflow-x-auto scrollbar-hide">
-            <div className="flex gap-2 px-6 py-3 w-max">
+            <div className="flex gap-2 px-3 py-3 w-max">
               {categories.map((category) => (
                 <button
                   key={category}

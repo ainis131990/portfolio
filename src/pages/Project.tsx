@@ -43,7 +43,7 @@ const Project = () => {
         <Navbar />
 
         {/* Hero Image */}
-        <section className="pt-20 px-4 md:px-6">
+        <section className="pt-20 px-2 md:px-3">
           <div className="w-full overflow-hidden rounded-xl fade-in-up">
             <img
               src={project.images[0]}
@@ -54,7 +54,7 @@ const Project = () => {
         </section>
 
         {/* Project Info */}
-        <section className="py-8 px-6">
+        <section className="py-8 px-3">
           <div className="max-w-4xl">
             <div className="fade-in-up fade-in-up-delay-1">
               <h1 className="text-xs md:text-sm font-medium">{project.title}</h1>
@@ -66,8 +66,8 @@ const Project = () => {
         </section>
 
         {/* Gallery */}
-        <section className="py-6 px-6">
-          <div className="space-y-4">
+        <section className="py-6 px-3">
+          <div className="space-y-2">
             {(() => {
               const galleryImages = project.images.slice(1);
               const rows: React.ReactNode[] = [];
@@ -96,7 +96,7 @@ const Project = () => {
                   // Two side-by-side
                   if (i + 1 < galleryImages.length) {
                     rows.push(
-                      <div key={`row-${i}`} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div key={`row-${i}`} className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         <div
                           className="overflow-hidden rounded-xl fade-in-up"
                           style={{ animationDelay: `${(i + 4) * 100}ms` }}
@@ -150,7 +150,7 @@ const Project = () => {
         </section>
 
         {/* Navigation */}
-        <section className="py-12 px-6 border-t border-border">
+        <section className="py-12 px-3 border-t border-border">
           <div className="flex items-center justify-between">
             {prevProject ? (
               <button
