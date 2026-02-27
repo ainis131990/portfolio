@@ -58,37 +58,9 @@ const Project = () => {
           <div className="max-w-4xl">
             <div className="mb-6 fade-in-up fade-in-up-delay-1">
               <h1 className="text-display mb-3">{project.title}</h1>
-              <p className="text-sm text-muted-foreground">
-                {project.tags.map((tag) => `#${tag}`).join(" ")}
-              </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 mb-8 fade-in-up fade-in-up-delay-2">
-              <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">
-                  Year
-                </p>
-                <p className="text-sm">{project.year}</p>
-              </div>
-              {project.client && (
-                <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">
-                    Client
-                  </p>
-                  <p className="text-sm">{project.client}</p>
-                </div>
-              )}
-              <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">
-                  Category
-                </p>
-                <p className="text-sm capitalize">
-                  {project.tags[0]}
-                </p>
-              </div>
-            </div>
-
-            <div className="max-w-2xl fade-in-up fade-in-up-delay-3">
+            <div className="max-w-2xl fade-in-up fade-in-up-delay-2">
               <p className="text-lg leading-relaxed text-foreground/90">
                 {project.description}
               </p>
