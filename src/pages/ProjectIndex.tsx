@@ -77,11 +77,11 @@ const ProjectIndex = () => {
                   }`}
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
-                  <div className={`relative overflow-hidden bg-muted ${selectedCategory !== "Archive" ? "aspect-[16/9]" : ""}`}>
+                  <div className="relative overflow-hidden bg-muted">
                     <img
                       src={project.images[0]}
                       alt={project.title}
-                      className={`w-full object-cover ${selectedCategory === "Archive" ? "h-auto" : "h-full"}`}
+                      className="w-full h-auto"
                       loading="lazy"
                     />
                   </div>
@@ -118,11 +118,11 @@ const ProjectIndex = () => {
                   }`}
                   style={{ transitionDelay: `${index * 80}ms` }}
                 >
-                  <div className={`relative overflow-hidden bg-muted ${selectedCategory === "Archive" ? "" : "aspect-[16/9]"}`}>
+                  <div className="relative overflow-hidden bg-muted">
                     <img
                       src={project.images[0]}
                       alt={project.title}
-                      className={`w-full object-cover ${selectedCategory === "Archive" ? "h-auto" : "h-full"}`}
+                      className="w-full h-auto"
                       loading="lazy"
                     />
                   </div>
