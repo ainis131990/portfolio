@@ -59,70 +59,86 @@ const ProjectIndex = () => {
         <section ref={sectionRef} className="pt-6 pb-24 px-6">
           {/* Mobile: Pinterest-style 2-column grid with equal sizes */}
           <div className="grid grid-cols-2 gap-3 md:hidden">
-            {filteredProjects.map((project, index) => (
-              <Link
-                key={project.id}
-                to={`/project/${project.id}`}
-                className={`project-card group block transition-all duration-700 ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-16"
-                }`}
-                style={{ transitionDelay: `${index * 50}ms` }}
-              >
-                <div className="relative overflow-hidden rounded-2xl bg-muted aspect-[4/5]">
-                  <img
-                    src={project.images[0]}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
+            {filteredProjects.map((project, index) => {
+              const Wrapper = selectedCategory === "Archive" ? "div" : Link;
+              const wrapperProps = selectedCategory === "Archive"
+                ? {}
+                : { to: `/project/${project.id}` };
+              return (
+                <Wrapper
+                  key={project.id}
+                  {...(wrapperProps as any)}
+                  className={`project-card group block transition-all duration-700 ${
+                    selectedCategory !== "Archive" ? "cursor-pointer" : "cursor-default"
+                  } ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-16"
+                  }`}
+                  style={{ transitionDelay: `${index * 50}ms` }}
+                >
+                  <div className="relative overflow-hidden rounded-2xl bg-muted aspect-[4/5]">
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
 
-                <div className="pt-2 pb-3">
-                  <h3 className="text-xs font-medium group-hover:opacity-70 transition-opacity duration-300 line-clamp-1">
-                    {project.title}
-                  </h3>
-                  <p className="text-[10px] text-muted-foreground mt-0.5 line-clamp-1">
-                    {project.subtitle || project.tags.slice(0, 2).map((tag) => `#${tag}`).join(" ")}
-                  </p>
-                </div>
-              </Link>
-            ))}
+                  <div className="pt-2 pb-3">
+                    <h3 className="text-xs font-medium group-hover:opacity-70 transition-opacity duration-300 line-clamp-1">
+                      {project.title}
+                    </h3>
+                    <p className="text-[10px] text-muted-foreground mt-0.5 line-clamp-1">
+                      {project.subtitle || project.tags.slice(0, 2).map((tag) => `#${tag}`).join(" ")}
+                    </p>
+                  </div>
+                </Wrapper>
+              );
+            })}
           </div>
 
           {/* Desktop layout */}
           <div className={`hidden md:block ${selectedCategory === "Archive" ? "columns-3" : "columns-2"} gap-4`}>
-            {filteredProjects.map((project, index) => (
-              <Link
-                key={project.id}
-                to={`/project/${project.id}`}
-                className={`project-card group block mb-4 break-inside-avoid transition-all duration-700 ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-16"
-                }`}
-                style={{ transitionDelay: `${index * 80}ms` }}
-              >
-                <div className="relative overflow-hidden rounded-3xl bg-muted">
-                  <img
-                    src={project.images[0]}
-                    alt={project.title}
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
-                </div>
+            {filteredProjects.map((project, index) => {
+              const Wrapper = selectedCategory === "Archive" ? "div" : Link;
+              const wrapperProps = selectedCategory === "Archive" 
+                ? {} 
+                : { to: `/project/${project.id}` };
+              return (
+                <Wrapper
+                  key={project.id}
+                  {...(wrapperProps as any)}
+                  className={`project-card group block mb-4 break-inside-avoid transition-all duration-700 ${
+                    selectedCategory !== "Archive" ? "cursor-pointer" : "cursor-default"
+                  } ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-16"
+                  }`}
+                  style={{ transitionDelay: `${index * 80}ms` }}
+                >
+                  <div className="relative overflow-hidden rounded-3xl bg-muted">
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="w-full h-auto object-cover"
+                      loading="lazy"
+                    />
+                  </div>
 
-                <div className="pt-3 pb-4">
-                  <h3 className="text-sm font-medium group-hover:opacity-70 transition-opacity duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-xs text-muted-foreground mt-0.5">
-                    {project.subtitle || project.tags.map((tag) => `#${tag}`).join(" ")}
-                  </p>
-                </div>
-              </Link>
-            ))}
+                  <div className="pt-3 pb-4">
+                    <h3 className="text-sm font-medium group-hover:opacity-70 transition-opacity duration-300">
+                      {project.title}
+                    </h3>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      {project.subtitle || project.tags.map((tag) => `#${tag}`).join(" ")}
+                    </p>
+                  </div>
+                </Wrapper>
+              );
+            })}
           </div>
         </section>
       </main>
