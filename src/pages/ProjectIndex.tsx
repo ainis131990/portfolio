@@ -77,11 +77,11 @@ const ProjectIndex = () => {
                   }`}
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
-                  <div className={`relative overflow-hidden rounded-xl bg-muted ${selectedCategory === "Archive" ? "aspect-[4/5]" : "aspect-[16/9]"}`}>
+                  <div className={`relative overflow-hidden rounded-xl bg-muted ${selectedCategory !== "Archive" ? "aspect-[16/9]" : ""}`}>
                     <img
                       src={project.images[0]}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className={`w-full object-cover ${selectedCategory === "Archive" ? "h-auto" : "h-full"}`}
                       loading="lazy"
                     />
                   </div>
