@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import FloatingNav from "@/components/FloatingNav";
 import ScrollRevealText from "@/components/ScrollRevealText";
-import { Mail, MapPin, Instagram, Linkedin, Dribbble } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const About = () => {
   const location = useLocation();
@@ -44,11 +44,6 @@ const About = () => {
     "Packaging"
   ];
 
-  const socialLinks = [
-    { name: "Instagram", icon: Instagram, url: "https://instagram.com" },
-    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com" },
-    { name: "Dribbble", icon: Dribbble, url: "https://dribbble.com" },
-  ];
 
   return (
     <>
@@ -114,30 +109,16 @@ const About = () => {
               </h3>
               <div className="space-y-2">
                 <a
-                  href="mailto:hello@jordanstudio.com"
+                  href="mailto:ainis1990@gmail.com"
                   className="text-sm hover:opacity-70 transition-opacity flex items-center gap-2"
                 >
                   <Mail size={14} />
-                  hello@jordanstudio.com
+                  ainis1990@gmail.com
                 </a>
                 <p className="text-sm flex items-center gap-2 text-muted-foreground">
                   <MapPin size={14} />
                   São Paulo, Brazil
                 </p>
-                <div className="flex gap-2 pt-3">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.name}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 border border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
-                      aria-label={social.name}
-                    >
-                      <social.icon size={14} />
-                    </a>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
