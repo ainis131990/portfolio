@@ -56,12 +56,9 @@ const Project = () => {
         {/* Project Info */}
         <section className="py-8 px-6">
           <div className="max-w-4xl">
-            <div className="mb-6 fade-in-up fade-in-up-delay-1">
-              <h1 className="text-display mb-3">{project.title}</h1>
-            </div>
-
-            <div className="max-w-2xl fade-in-up fade-in-up-delay-2">
-              <p className="text-lg leading-relaxed text-foreground/90">
+            <div className="fade-in-up fade-in-up-delay-1">
+              <h1 className="text-xs md:text-sm font-medium">{project.title}</h1>
+              <p className="text-xs md:text-sm text-muted-foreground mt-0.5">
                 {project.description}
               </p>
             </div>
