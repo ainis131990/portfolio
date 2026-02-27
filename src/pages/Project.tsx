@@ -93,7 +93,7 @@ const Project = () => {
                 onClick={() => navigate(`/project/${prevProject.id}`)}
                 className="group flex items-center gap-3 text-left hover:opacity-70 transition-opacity duration-300"
               >
-                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-2 transition-transform duration-300" />
+                <ArrowLeft className="w-4 h-4" />
                 <div>
                   <p className="text-xs md:text-sm text-muted-foreground">
                     Previous
@@ -120,7 +120,7 @@ const Project = () => {
                     {nextProject.title}
                   </p>
                 </div>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4" />
               </button>
             ) : (
               <div />
