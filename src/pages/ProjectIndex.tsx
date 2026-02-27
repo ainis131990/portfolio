@@ -68,7 +68,7 @@ const ProjectIndex = () => {
                 <Wrapper
                   key={project.id}
                   {...(wrapperProps as any)}
-                  className={`project-card group block transition-all duration-700 ${
+                  className={`${selectedCategory !== "Archive" ? "project-card" : ""} group block transition-all duration-700 ${
                     selectedCategory !== "Archive" ? "cursor-pointer" : "cursor-default"
                   } ${
                     isVisible
@@ -109,7 +109,7 @@ const ProjectIndex = () => {
                 <Wrapper
                   key={project.id}
                   {...(wrapperProps as any)}
-                  className={`project-card group block mb-4 break-inside-avoid transition-all duration-700 ${
+                  className={`${selectedCategory !== "Archive" ? "project-card" : ""} group block mb-4 break-inside-avoid transition-all duration-700 ${
                     selectedCategory !== "Archive" ? "cursor-pointer" : "cursor-default"
                   } ${
                     isVisible
