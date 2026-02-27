@@ -16,6 +16,7 @@ export interface Project {
   images: string[];
   color: string;
   aspectRatio: 'portrait' | 'landscape' | 'square';
+  archiveOnly?: boolean;
 }
 
 export const projects: Project[] = [
@@ -94,7 +95,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80"
     ],
     color: "#F59E0B",
-    aspectRatio: "portrait"
+    aspectRatio: "portrait",
+    archiveOnly: true
   },
   {
     id: "silent-observers",
@@ -109,7 +111,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=800&q=80"
     ],
     color: "#8B5CF6",
-    aspectRatio: "landscape"
+    aspectRatio: "landscape",
+    archiveOnly: true
   }
 ];
 
