@@ -1,13 +1,11 @@
 import { useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { getProjectById, projects } from "@/data/projects";
+import { useParams, Link } from "react-router-dom";
+import { getProjectById } from "@/data/projects";
 import Navbar from "@/components/Navbar";
 import FloatingNav from "@/components/FloatingNav";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Project = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const project = getProjectById(id || "");
 
   useEffect(() => {
@@ -31,11 +29,6 @@ const Project = () => {
     );
   }
 
-  // Find next and previous projects
-  const currentIndex = projects.findIndex((p) => p.id === project.id);
-  const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
-  const nextProject =
-    currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
   return (
     <>
@@ -149,48 +142,6 @@ className="w-full overflow-hidden fade-in-up"
           </div>
         </section>
 
-        {/* Navigation */}
-        <section className="py-12 px-3 border-t border-border">
-          <div className="flex items-center justify-between">
-            {prevProject ? (
-              <button
-                onClick={() => navigate(`/project/${prevProject.id}`)}
-                className="group flex items-center gap-3 text-left hover:opacity-70 transition-opacity duration-300"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <div>
-                  <p className="text-xs md:text-sm text-muted-foreground">
-                    Previous
-                  </p>
-                  <p className="text-xs md:text-sm">
-                    {prevProject.title}
-                  </p>
-                </div>
-              </button>
-            ) : (
-              <div />
-            )}
-
-            {nextProject ? (
-              <button
-                onClick={() => navigate(`/project/${nextProject.id}`)}
-                className="group flex items-center gap-3 text-right hover:opacity-70 transition-opacity duration-300"
-              >
-                <div>
-                  <p className="text-xs md:text-sm text-muted-foreground">
-                    Next
-                  </p>
-                  <p className="text-xs md:text-sm">
-                    {nextProject.title}
-                  </p>
-                </div>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            ) : (
-              <div />
-            )}
-          </div>
-        </section>
       </main>
       <FloatingNav />
     </>
