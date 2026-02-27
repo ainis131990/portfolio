@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Mail, Instagram, Linkedin, Dribbble } from "lucide-react";
+import { Mail } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -22,11 +22,6 @@ const FloatingNav = () => {
     return currentPath.startsWith(path);
   };
 
-  const socialLinks = [
-    { name: "Instagram", icon: Instagram, url: "https://instagram.com" },
-    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com" },
-    { name: "Dribbble", icon: Dribbble, url: "https://dribbble.com" },
-  ];
 
   return (
     <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
@@ -63,41 +58,17 @@ const FloatingNav = () => {
             side="top"
             sideOffset={12}
           >
-            <div className="space-y-4">
-              {/* Say Hi Section */}
-              <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                  Say Hi!
-                </p>
-                <a 
-                  href="mailto:hello@jordanstudio.com"
-                  className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity"
-                >
-                  <Mail size={14} />
-                  hello@jordanstudio.com
-                </a>
-              </div>
-
-              {/* Follow Me Section */}
-              <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                  Follow me
-                </p>
-                <div className="flex gap-2">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.name}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 border border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
-                      aria-label={social.name}
-                    >
-                      <social.icon size={14} />
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
+                Say Hi!
+              </p>
+              <a 
+                href="mailto:ainis1990@gmail.com"
+                className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity"
+              >
+                <Mail size={14} />
+                ainis1990@gmail.com
+              </a>
             </div>
           </PopoverContent>
         </Popover>
