@@ -65,7 +65,7 @@ const Navbar = ({ selectedCategory, onCategoryChange }: NavbarProps) => {
                     onClick={() => onCategoryChange(category)}
                     className={`px-4 py-1.5 text-sm rounded-full transition-all duration-300 ${
                       selectedCategory === category
-                        ? "bg-foreground text-background"
+                        ? "bg-foreground/15 text-foreground backdrop-blur-md"
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
@@ -98,7 +98,7 @@ const Navbar = ({ selectedCategory, onCategoryChange }: NavbarProps) => {
                   onClick={() => onCategoryChange(category)}
                   className={`px-4 py-2 text-sm rounded-full whitespace-nowrap transition-all duration-300 ${
                     selectedCategory === category
-                      ? "bg-foreground text-background"
+                      ? "bg-foreground/15 text-foreground backdrop-blur-md"
                       : "bg-muted text-muted-foreground"
                   }`}
                 >
