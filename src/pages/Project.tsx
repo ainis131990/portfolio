@@ -59,7 +59,7 @@ const Project = () => {
         </section>
 
         {/* Gallery */}
-        <section className="py-6 pb-24 px-3">
+        <section className="py-6 px-3">
           <div className="space-y-2">
             {(() => {
               const galleryImages = project.images.slice(1);
