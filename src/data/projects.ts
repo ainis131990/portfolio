@@ -1,3 +1,4 @@
+import placeholderImg from "@/assets/1.jpg";
 import holographicImg from "@/assets/simon-lee-holographic.jpg";
 import catImg from "@/assets/syarafina-cat.jpg";
 import spheresImg from "@/assets/victoria-spheres.jpg";
@@ -30,11 +31,11 @@ export const projects: Project[] = [
     client: "Personal Project",
     images: [
       spheresImg,
-      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&q=80",
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
-      "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=800&q=80",
-      "https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?w=800&q=80"
+      placeholderImg,
+      placeholderImg,
+      placeholderImg,
+      placeholderImg,
+      placeholderImg,
     ],
     color: "#FF6B6B",
     aspectRatio: "portrait"
@@ -48,7 +49,7 @@ export const projects: Project[] = [
     client: "Flow Magazine",
     images: [
       catImg,
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+      "placeholderImg,/photo-1506905925346-21bda4d32df4?w=800&q=80"
     ],
     color: "#6366F1",
     aspectRatio: "landscape"
@@ -62,7 +63,7 @@ export const projects: Project[] = [
     client: "ADG Brasil",
     images: [
       holographicImg,
-      "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80"
+      "placeholderImg,/photo-1559028012-481c04fa702d?w=800&q=80"
     ],
     color: "#EC4899",
     aspectRatio: "portrait"
@@ -77,7 +78,7 @@ export const projects: Project[] = [
     client: "Urban Studio",
     images: [
       birdImg,
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80"
+      "placeholderImg,/photo-1470071459604-3b5ec3a7fe05?w=800&q=80"
     ],
     color: "#10B981",
     aspectRatio: "portrait"
@@ -92,7 +93,7 @@ export const projects: Project[] = [
     client: "Nature Press",
     images: [
       floralImg,
-      "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80"
+      "placeholderImg,/photo-1490750967868-88aa4f44baee?w=800&q=80"
     ],
     color: "#F59E0B",
     aspectRatio: "portrait",
@@ -108,7 +109,7 @@ export const projects: Project[] = [
     client: "Wildlife Foundation",
     images: [
       deerImg,
-      "https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=800&q=80"
+      "placeholderImg,/photo-1474511320723-9a56873571b7?w=800&q=80"
     ],
     color: "#8B5CF6",
     aspectRatio: "landscape",
