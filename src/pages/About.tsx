@@ -22,15 +22,15 @@ const About = () => {
   }, [location]);
 
   const clients = [
-    "Vogue Brasil",
-    "D-Edge Club",
-    "Galeria Vermelho",
-    "ADG Brasil",
-    "Flow Magazine",
-    "Aurora AI",
-    "Nike",
-    "Spotify",
-    "Adobe"
+    "client",
+    "client",
+    "client",
+    "client",
+    "client",
+    "client",
+    "client",
+    "client",
+    "client"
   ];
 
   const services = [
@@ -39,7 +39,6 @@ const About = () => {
     "Art Direction",
     "Typography",
     "Digital Design",
-    "Motion Graphics",
     "Print Design",
     "Packaging"
   ];
