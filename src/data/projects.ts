@@ -59,7 +59,7 @@ export const projects: Project[] = [
     year: "2024",
     client: "ADG Brasil",
     images: [placeholderImg],
-      holographicImg,
+      placeholderImg,
       "placeholderImg,/photo-1559028012-481c04fa702d?w=800&q=80"
     ],
     color: "#EC4899",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     year: "2024",
     client: "Urban Studio",
     images: [placeholderImg],
-      birdImg,
+      placeholderImg,
       "placeholderImg,/photo-1470071459604-3b5ec3a7fe05?w=800&q=80"
     ],
     color: "#10B981",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     year: "2023",
     client: "Nature Press",
     images: [placeholderImg],
-      floralImg,
+      placeholderImg,
       "placeholderImg,/photo-1490750967868-88aa4f44baee?w=800&q=80"
     ],
     color: "#F59E0B",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     year: "2024",
     client: "Wildlife Foundation",
     images: [placeholderImg],
-      deerImg,
+      placeholderImg,
       "placeholderImg,/photo-1474511320723-9a56873571b7?w=800&q=80"
     ],
     color: "#8B5CF6",
