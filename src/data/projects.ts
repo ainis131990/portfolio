@@ -44,10 +44,10 @@ export const projects: Project[] = [
     description: "Editorial design for Flow magazine, a publication about mindfulness and well-being. The project involved creating a visual system that conveys calm and balance through generous spacing, elegant typography, and contemplative photography.",
     year: "2023",
     client: "Flow Magazine",
-    images: [placeholderImg],
-      catImg,
-      "placeholderImg,/photo-1506905925346-21bda4d32df4?w=800&q=80"
-    ],
+images: [
+  placeholderImg,
+  placeholderImg
+],
     color: "#6366F1",
     aspectRatio: "landscape"
   },
@@ -58,10 +58,10 @@ export const projects: Project[] = [
     description: "A series of experimental posters exploring the limits of typography as a form of visual expression. Each piece challenges traditional typographic conventions, transforming letters into graphic sculptures.",
     year: "2024",
     client: "ADG Brasil",
-    images: [placeholderImg],
-      placeholderImg,
-      "placeholderImg,/photo-1559028012-481c04fa702d?w=800&q=80"
-    ],
+images: [
+  placeholderImg,
+  placeholderImg
+],
     color: "#EC4899",
     aspectRatio: "portrait"
   },
@@ -73,10 +73,10 @@ export const projects: Project[] = [
     description: "A branding project that explores the harmony between urban architecture and natural forms, creating a visual identity that celebrates the coexistence of city life and nature.",
     year: "2024",
     client: "Urban Studio",
-    images: [placeholderImg],
-      placeholderImg,
-      "placeholderImg,/photo-1470071459604-3b5ec3a7fe05?w=800&q=80"
-    ],
+  images: [
+  placeholderImg,
+  placeholderImg
+],
     color: "#10B981",
     aspectRatio: "portrait"
   },
@@ -88,10 +88,10 @@ export const projects: Project[] = [
     description: "A photographic study of botanical structures and their intricate patterns, revealing the hidden geometry of the natural world.",
     year: "2023",
     client: "Nature Press",
-    images: [placeholderImg],
-      placeholderImg,
-      "placeholderImg,/photo-1490750967868-88aa4f44baee?w=800&q=80"
-    ],
+    images: [
+  placeholderImg,
+  placeholderImg
+],
     color: "#F59E0B",
     aspectRatio: "portrait",
     archiveOnly: true
@@ -104,10 +104,10 @@ export const projects: Project[] = [
     description: "A documentary photography series capturing wildlife in undisturbed moments, exploring the quiet dignity of animals in their natural environments.",
     year: "2024",
     client: "Wildlife Foundation",
-    images: [placeholderImg],
-      placeholderImg,
-      "placeholderImg,/photo-1474511320723-9a56873571b7?w=800&q=80"
-    ],
+ images: [
+  placeholderImg,
+  placeholderImg
+],
     color: "#8B5CF6",
     aspectRatio: "landscape",
     archiveOnly: true
