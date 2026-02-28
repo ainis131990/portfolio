@@ -54,7 +54,7 @@ const About = () => {
         <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-3 pt-24 pb-8">
           <div className="max-w-[95%]">
             <ScrollRevealText 
-              text="Jordan Studio is an independent creative practice focused on graphic design, art direction, and visual identity systems that communicate with clarity and purpose."
+              text="Art director based in Latvia, specializing in brand identities built on clarity and purpose."
               className="text-lg font-medium tracking-tight leading-[1.4]"
             />
           </div>
