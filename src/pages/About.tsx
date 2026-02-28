@@ -116,7 +116,7 @@ const About = () => {
                 </a>
                 <p className="text-sm flex items-center gap-2 text-muted-foreground">
                   <MapPin size={14} />
-                  São Paulo, Brazil
+                  Riga, Latvia
                 </p>
               </div>
             </div>
