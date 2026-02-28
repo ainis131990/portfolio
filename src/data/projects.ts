@@ -30,12 +30,9 @@ export const projects: Project[] = [
     year: "2024",
     client: "Personal Project",
     images: [
-      spheresImg,
       placeholderImg,
       placeholderImg,
-      placeholderImg,
-      placeholderImg,
-      placeholderImg,
+      placeholderImg
     ],
     color: "#FF6B6B",
     aspectRatio: "portrait"
