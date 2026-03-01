@@ -1,10 +1,21 @@
+import rvkm1 from "@/assets/rvkm-1.mp4";
+import rvkm2 from "@/assets/rvkm-2.jpg";
+import rvkm3 from "@/assets/rvkm-3.jpg";
+import rvkm4 from "@/assets/rvkm-4.jpg";
+import rvkm5 from "@/assets/rvkm-5.jpg";
+import rvkm6 from "@/assets/rvkm-6.jpg";
+import rvkm7 from "@/assets/rvkm-7.mp4";
+import rvkm8 from "@/assets/rvkm-8.jpg";
+import rvkm9 from "@/assets/rvkm-9.jpg";
+import rvkm10 from "@/assets/rvkm-10.mp4";
+import rvkm11 from "@/assets/rvkm-11.jpg";
+import rvkm12 from "@/assets/rvkm-12.jpg";
+import rvkm13 from "@/assets/rvkm-13.jpg";
+import rvkm14 from "@/assets/rvkm-14.jpg";
+import rvkm15 from "@/assets/rvkm-15.jpg";
+import rvkm16 from "@/assets/rvkm-16.jpg";
+import rvkm17 from "@/assets/rvkm-17.jpg";
 import placeholderImg from "@/assets/1.jpg";
-import holographicImg from "@/assets/simon-lee-holographic.jpg";
-import catImg from "@/assets/syarafina-cat.jpg";
-import spheresImg from "@/assets/victoria-spheres.jpg";
-import birdImg from "@/assets/nypl-bird.jpg";
-import floralImg from "@/assets/kasturi-roy-floral.jpg";
-import deerImg from "@/assets/omk-deer.jpg";
 
 export interface Project {
   id: string;
@@ -51,20 +62,36 @@ images: [
     color: "#6366F1",
     aspectRatio: "landscape"
   },
-  {
-    id: "typeface-manifesto",
-    title: "Typeface Manifesto",
-    tags: ["typography", "poster", "experimental"],
-    description: "A series of experimental posters exploring the limits of typography as a form of visual expression. Each piece challenges traditional typographic conventions, transforming letters into graphic sculptures.",
-    year: "2024",
-    client: "ADG Brasil",
-images: [
-  placeholderImg,
-  placeholderImg
-],
-    color: "#EC4899",
-    aspectRatio: "portrait"
-  },
+{
+  id: "rvkm",
+  title: "Museum of Riga RVKM",
+  tags: ["branding", "visual identity", "cultural"],
+  subtitle: "Contemporary identity for a historic institution",
+  description: "Visual identity development for Museum of Riga RVKM. The project focused on creating a modern, flexible system that respects historical context while positioning the institution for contemporary audiences.",
+  year: "2025",
+  client: "Museum of Riga RVKM",
+  images: [
+    rvkm1,
+    rvkm2,
+    rvkm3,
+    rvkm4,
+    rvkm5,
+    rvkm6,
+    rvkm7,
+    rvkm8,
+    rvkm9,
+    rvkm10,
+    rvkm11,
+    rvkm12,
+    rvkm13,
+    rvkm14,
+    rvkm15,
+    rvkm16,
+    rvkm17
+  ],
+  color: "#111111",
+  aspectRatio: "landscape"
+},
   {
     id: "urban-nature",
     title: "Urban Nature",
