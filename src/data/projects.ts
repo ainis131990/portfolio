@@ -1,3 +1,17 @@
+import RO1 from "@/assets/RO-1.jpg";
+import RO2 from "@/assets/RO-2.jpg";
+import RO3 from "@/assets/RO-3.jpg";
+import RO4 from "@/assets/RO-4.jpg";
+import RO5 from "@/assets/RO-5.jpg";
+import RO6 from "@/assets/RO-6.jpg";
+import RO7 from "@/assets/RO-7.jpg";
+import RO8 from "@/assets/RO-8.jpg";
+import RO9 from "@/assets/RO-9.jpg";
+import RO10 from "@/assets/RO-10.jpg";
+import RO12 from "@/assets/RO-12.jpg";
+import RO13 from "@/assets/RO-13.jpg";
+import RO14 from "@/assets/RO-14.jpg";
+import RO15 from "@/assets/RO-15.jpg";
 import rvkm1 from "@/assets/rvkm-1.jpg";
 import rvkm2 from "@/assets/rvkm-2.jpg";
 import rvkm3 from "@/assets/rvkm-3.jpg";
@@ -37,13 +51,24 @@ export const projects: Project[] = [
     title: "Port of Riga",
     tags: ["illustration", "digital art", "abstract"],
     subtitle: "Transforming the brand for international growth",
-    description: "A series of digital illustrations exploring the interaction between geometric shapes and vibrant colors. The project emerged from a desire to translate emotions into abstract visual compositions, where each piece represents a different emotional state through specific chromatic palettes.",
+    description: "Transforming the brand for international growth",
     year: "2024",
     client: "Personal Project",
     images: [
-      placeholderImg,
-      placeholderImg,
-      placeholderImg
+      RO1,
+      RO2,
+      RO3,
+      RO4,
+      RO5,
+      RO6,
+      RO7,
+      RO8,
+      RO9,
+      RO10,
+      RO12,
+      RO13,
+      RO14,
+      RO15
     ],
     color: "#FF6B6B",
     aspectRatio: "portrait"
