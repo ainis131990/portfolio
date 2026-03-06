@@ -12,6 +12,7 @@ import RO12 from "@/assets/RO-12.jpg";
 import RO13 from "@/assets/RO-13.jpg";
 import RO14 from "@/assets/RO-14.jpg";
 import RO15 from "@/assets/RO-15.jpg";
+import RO16 from "@/assets/RO-16.jpg";
 import rvkm1 from "@/assets/rvkm-1.jpg";
 import rvkm2 from "@/assets/rvkm-2.jpg";
 import rvkm3 from "@/assets/rvkm-3.jpg";
@@ -68,7 +69,7 @@ export const projects: Project[] = [
       RO12,
       RO13,
       RO7,
-      RO10
+      RO16
     ],
     color: "#FF6B6B",
     aspectRatio: "portrait"
