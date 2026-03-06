@@ -67,8 +67,8 @@ export const projects: Project[] = [
       RO15,
       RO12,
       RO13,
-      RO7,
-      RO10
+      RO10,
+      RO7
     ],
     color: "#FF6B6B",
     aspectRatio: "portrait"
