@@ -57,9 +57,9 @@ export const projects: Project[] = [
     images: [
       RO1,
       RO2,
-      RO3,
-      RO4,
       RO5,
+      RO4,
+      RO3,
       RO6,
       RO7,
       RO8,
