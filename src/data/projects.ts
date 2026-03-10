@@ -157,15 +157,26 @@ images: [
 },
   {
     id: "urban-nature",
-    title: "Urban Nature",
+    title: "Lielvards",
     tags: ["branding", "identity", "nature"],
     subtitle: "Bridging urban design with natural elements",
     description: "A branding project that explores the harmony between urban architecture and natural forms, creating a visual identity that celebrates the coexistence of city life and nature.",
     year: "2024",
     client: "Urban Studio",
   images: [
-  placeholderImg,
-  placeholderImg
+  VARDS1,
+  VARDS2,
+  VARDS3,
+  VARDS4,
+  VARDS5,
+  VARDS6,
+  VARDS7,
+  VARDS8,
+  VARDS9,
+  VARDS10,
+  VARDS11,
+  VARDS12,
+  VARDS13
 ],
     color: "#10B981",
     aspectRatio: "portrait"
