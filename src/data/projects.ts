@@ -165,18 +165,18 @@ images: [
     client: "Urban Studio",
   images: [
   VARDS1,
-  VARDS2,
-  VARDS3,
   VARDS4,
-  VARDS5,
-  VARDS6,
+  VARDS3,
+  VARDS2,
   VARDS7,
-  VARDS8,
-  VARDS9,
+  VARDS6,
+  VARDS5,
   VARDS10,
-  VARDS11,
+  VARDS9,
+  VARDS8,
+  VARDS13,
   VARDS12,
-  VARDS13
+  VARDS11
 ],
     color: "#10B981",
     aspectRatio: "portrait"
