@@ -95,8 +95,19 @@ export const projects: Project[] = [
     year: "2023",
     client: "Flow Magazine",
 images: [
-  placeholderImg,
-  placeholderImg
+  BLUOR1,
+  BLUOR2,
+  BLUOR3,
+  BLUOR4,
+  BLUOR5,
+  BLUOR6,
+  BLUOR7,
+  BLUOR8,
+  BLUOR9,
+  BLUOR10,
+  BLUOR11,
+  BLUOR12,
+  BLUOR13
 ],
     color: "#6366F1",
     aspectRatio: "landscape"
