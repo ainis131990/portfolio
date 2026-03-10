@@ -96,18 +96,18 @@ export const projects: Project[] = [
     client: "Flow Magazine",
 images: [
   BLUOR1,
-  BLUOR2,
-  BLUOR3,
   BLUOR4,
-  BLUOR5,
-  BLUOR6,
+  BLUOR3,
+  BLUOR2,
   BLUOR7,
-  BLUOR8,
-  BLUOR9,
+  BLUOR6,
+  BLUOR5,
   BLUOR10,
-  BLUOR11,
+  BLUOR9,
+  BLUOR8,
+  BLUOR13,
   BLUOR12,
-  BLUOR13
+  BLUOR11
 ],
     color: "#6366F1",
     aspectRatio: "landscape"
