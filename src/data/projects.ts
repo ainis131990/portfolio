@@ -198,7 +198,7 @@ images: [
     aspectRatio: "portrait"
   },
   {
-    id: "Lieldienas 2026",
+    id: "Lieldienas-2026",
     title: "Lieldienas 2026",
     tags: ["poster", "illustration"],
     subtitle: "Illustrations for Riga city – Spring campaign",
@@ -207,7 +207,7 @@ images: [
  images: [
  ARCH2
 ],
-    color: "#000000"",
+    color: "#000000",
     aspectRatio: "portrait",
     archiveOnly: true
   },
