@@ -380,20 +380,6 @@ images: [
     archiveOnly: true
   },
   {
-    id: "Legandgo",
-    title: "Leg&go",
-    tags: ["branding", "visual identity"],
-    subtitle: "Branding for kids balance bike",
-    description: "",
-    year: "2023",
- images: [
- ARCH13
-],
-    color: "#000000",
-    aspectRatio: "portrait",
-    archiveOnly: true
-  },
-  {
     id: "Front",
     title: "Front",
     tags: ["branding", "visual identity"],
