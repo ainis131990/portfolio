@@ -229,7 +229,7 @@ images: [
     id: "Balticway",
     title: "BalticWay",
     tags: ["branding", "visual identity"],
-    subtitle: "Visual identity,
+    subtitle: "Visual identity",
     description: "",
     year: "2023",
  images: [
