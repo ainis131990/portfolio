@@ -310,20 +310,6 @@ images: [
     archiveOnly: true
   },
   {
-    id: "Zuzeum",
-    title: "Zuzuem exhibition",
-    tags: ["branding", "visual identity"],
-    subtitle: "Visual identity for art exhibition",
-    description: "",
-    year: "2023",
- images: [
- ARCH9
-],
-    color: "#000000",
-    aspectRatio: "portrait",
-    archiveOnly: true
-  },
-  {
     id: "Merks",
     title: "Merks majas",
     tags: ["branding", "visual identity"],
