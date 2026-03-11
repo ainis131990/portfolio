@@ -204,7 +204,8 @@ images: [
     subtitle: "Illustrations for Riga city – Spring campaign",
     description: "",
     year: "2023",
-    images: [ARCH1],
+ images: [
+ ARCH2
 ],
     color: "#000000"",
     aspectRatio: "portrait",
@@ -218,7 +219,7 @@ images: [
     description: "",
     year: "2024",
  images: [
-  ARCH2
+ ARCH2
 ],
     color: "#8B5CF6",
     aspectRatio: "landscape",
