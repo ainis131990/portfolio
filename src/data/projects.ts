@@ -198,18 +198,15 @@ images: [
     aspectRatio: "portrait"
   },
   {
-    id: "botanical-forms",
-    title: "Botanical Forms",
-    tags: ["photography", "nature", "editorial"],
-    subtitle: "Exploring organic patterns in flora",
-    description: "A photographic study of botanical structures and their intricate patterns, revealing the hidden geometry of the natural world.",
+    id: "Lieldienas 2026",
+    title: "Lieldienas 2026",
+    tags: ["poster", "illustration"],
+    subtitle: "Illustrations for Riga city – Spring campaign",
+    description: "",
     year: "2023",
-    client: "Nature Press",
-    images: [
-  placeholderImg,
-  placeholderImg
+    images: [ARCH1],
 ],
-    color: "#F59E0B",
+    color: "#000000"",
     aspectRatio: "portrait",
     archiveOnly: true
   },
