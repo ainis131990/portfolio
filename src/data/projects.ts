@@ -224,7 +224,21 @@ images: [
     color: "#8B5CF6",
     aspectRatio: "landscape",
     archiveOnly: true
-  }
+  },
+  {
+    id: "Balticway",
+    title: "BalticWay",
+    tags: ["branding", "visual identity"],
+    subtitle: "Visual identity,
+    description: "",
+    year: "2023",
+ images: [
+ ARCH3
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
 ];
 
 export const getProjectById = (id: string): Project | undefined => {
