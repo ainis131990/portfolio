@@ -239,6 +239,188 @@ images: [
     aspectRatio: "portrait",
     archiveOnly: true
   },
+  {
+    id: "Latdev",
+    title: "Latvian agency for development",
+    tags: ["branding", "visual identity"],
+    subtitle: "Visual identity proposal",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH4
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "LVNM",
+    title: "National History Museum of Latvia",
+    tags: ["branding", "visual identity"],
+    subtitle: "Business card proposal",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH5
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "RTU",
+    title: "RTU science centre",
+    tags: ["branding", "visual identity"],
+    subtitle: "Logo design",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH6
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "LS",
+    title: "Lacplesa skvers",
+    tags: ["branding", "visual identity"],
+    subtitle: "Visual identity",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH7
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Swiss",
+    title: "Embassy of Switzerland in Latvia",
+    tags: ["branding", "visual identity"],
+    subtitle: "One hundread years of de iure recognition",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH8
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Zuzeum",
+    title: "Zuzuem exhibition",
+    tags: ["branding", "visual identity"],
+    subtitle: "Visual identity for art exhibition",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH9
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Merks",
+    title: "Merks majas",
+    tags: ["branding", "visual identity"],
+    subtitle: "Logo and sign design",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH10
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Vizium",
+    title: "Vizium science centre",
+    tags: ["branding", "visual identity"],
+    subtitle: "Visual identity and sign design",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH11
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "AOM",
+    title: "Architecture of migration",
+    tags: ["branding", "visual identity"],
+    subtitle: "Conference identity design",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH12
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Legandgo",
+    title: "Leg&go",
+    tags: ["branding", "visual identity"],
+    subtitle: "Branding for kids balance bike",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH13
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Legandgo",
+    title: "Leg&go",
+    tags: ["branding", "visual identity"],
+    subtitle: "Branding for kids balance bike",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH13
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+  {
+    id: "Front",
+    title: "Front",
+    tags: ["branding", "visual identity"],
+    subtitle: "Visual identity for handmade rug distributor",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH14
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
+    {
+    id: "Paradox holdings",
+    title: "Paradox holdings",
+    tags: ["branding", "visual identity"],
+    subtitle: "Branding holding company",
+    description: "",
+    year: "2023",
+ images: [
+ ARCH15
+],
+    color: "#000000",
+    aspectRatio: "portrait",
+    archiveOnly: true
+  },
 ];
 
 export const getProjectById = (id: string): Project | undefined => {
