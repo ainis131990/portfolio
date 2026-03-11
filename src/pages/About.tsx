@@ -53,7 +53,7 @@ const About = () => {
         <section className="min-h-[60vh] max-h-[70vh] flex flex-col justify-center px-3 pt-24 pb-8">
           <div className="max-w-[95%]">
             <ScrollRevealText 
-              text="Art director based in Latvia, specializing in brand identities built on clarity and purpose."
+              text="Ainis Permins is an art director and graphic designer based in Latvia with over 10 years of experience in brand identity and visual communication. His work focuses on creating clear, thoughtful design systems that help organizations communicate with purpose and consistency. He has developed identities for cultural institutions, public organizations, and private companies across the Baltic region. His practice combines strategic thinking with precise visual execution."
               className="text-lg font-medium tracking-tight leading-[1.4]"
             />
           </div>
