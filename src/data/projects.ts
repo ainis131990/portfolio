@@ -98,7 +98,8 @@ export const projects: Project[] = [
       RO16
     ],
     color: "#FF6B6B",
-    aspectRatio: "portrait"
+    aspectRatio: "portrait",
+    archiveOnly: false
   },
   {
     id: "bluor-bank",
