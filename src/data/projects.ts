@@ -268,14 +268,14 @@ images: [
     archiveOnly: true
   },
   {
-    id: "RTU",
-    title: "RTU science centre",
+    id: "Merks",
+    title: "Merks majas",
     tags: ["branding", "visual identity"],
-    subtitle: "Logo design",
+    subtitle: "Logo and sign design",
     description: "",
     year: "2023",
  images: [
- ARCH6
+ ARCH10
 ],
     color: "#000000",
     aspectRatio: "portrait",
@@ -310,14 +310,14 @@ images: [
     archiveOnly: true
   },
   {
-    id: "Merks",
-    title: "Merks majas",
+    id: "RTU",
+    title: "RTU science centre",
     tags: ["branding", "visual identity"],
-    subtitle: "Logo and sign design",
+    subtitle: "Logo design",
     description: "",
     year: "2023",
  images: [
- ARCH10
+ ARCH6
 ],
     color: "#000000",
     aspectRatio: "portrait",
