@@ -211,16 +211,14 @@ images: [
     archiveOnly: true
   },
   {
-    id: "silent-observers",
-    title: "Silent Observers",
-    tags: ["photography", "wildlife", "documentary"],
-    subtitle: "Wildlife in their natural habitat",
-    description: "A documentary photography series capturing wildlife in undisturbed moments, exploring the quiet dignity of animals in their natural environments.",
+    id: "AMLpro",
+    title: "AMLpro",
+    tags: ["branding", "visual identity"],
+    subtitle: "Logo for Anti-money laundering",
+    description: "",
     year: "2024",
-    client: "Wildlife Foundation",
  images: [
-  placeholderImg,
-  placeholderImg
+  ARCH2
 ],
     color: "#8B5CF6",
     aspectRatio: "landscape",
