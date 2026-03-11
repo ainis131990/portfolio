@@ -56,7 +56,6 @@ import rvkm14 from "@/assets/rvkm-14.jpg";
 import rvkm15 from "@/assets/rvkm-15.jpg";
 import rvkm16 from "@/assets/rvkm-16.jpg";
 import rvkm17 from "@/assets/rvkm-17.jpg";
-import placeholderImg from "@/assets/1.jpg";
 
 export interface Project {
   id: string;
@@ -74,13 +73,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "chromatic-dreams",
+    id: "port-of-riga",
     title: "Port of Riga",
-    tags: ["illustration", "digital art", "abstract"],
+    tags: ["branding", "visual identity", "strategy"],
     subtitle: "Transforming the brand for international growth",
-    description: "Transforming the brand for international growth",
+    description: "A comprehensive brand transformation for the Port of Riga, one of the Baltic region’s most important logistics and transport hubs. The project focused on developing a modern visual identity that reflects the port’s strategic role in international trade while strengthening its global presence. The system combines strong geometric forms with a flexible communication framework designed for digital platforms, infrastructure, and international promotion.",
     year: "2024",
-    client: "Personal Project",
+    client: "Freeport of Riga Authority",
     images: [
       RO1,
       RO2,
@@ -101,12 +100,13 @@ export const projects: Project[] = [
     aspectRatio: "portrait"
   },
   {
-    id: "flow-magazine",
+    id: "bluor-bank",
     title: "BluOr Bank",
-    tags: ["editorial", "magazine", "lifestyle"],
-    description: "Editorial design for Flow magazine, a publication about mindfulness and well-being. The project involved creating a visual system that conveys calm and balance through generous spacing, elegant typography, and contemplative photography.",
+    tags: ["branding", "visual identity", "finance"],
+    subtitle: "Reimagining the identity of a modern private bank",
+    description: "Brand identity refresh for BluOr Bank, a contemporary financial institution serving private and corporate clients across Europe. The project focused on evolving the brand into a more modern, confident and internationally relevant visual system. The identity balances clarity and sophistication, combining refined typography, a structured visual language and a distinctive color palette designed to strengthen recognition across digital and physical environments.",
     year: "2023",
-    client: "Flow Magazine",
+    client: "BluOr Bank",
 images: [
   BLUOR1,
   BLUOR4,
@@ -128,9 +128,9 @@ images: [
 {
   id: "rvkm",
   title: "Museum of Riga RVKM",
-  tags: ["branding", "visual identity", "cultural"],
-  subtitle: "Contemporary identity for a historic institution",
-  description: "Visual identity development for Museum of Riga RVKM. The project focused on creating a modern, flexible system that respects historical context while positioning the institution for contemporary audiences.",
+  tags: ["branding", "visual identity", "culture"],
+  subtitle: "A contemporary identity for Riga’s oldest museum",
+  description: "Visual identity design for the Museum of the History of Riga and Navigation, one of the oldest museums in the Baltic region. The project focused on creating a contemporary visual system that respects the institution’s rich historical heritage while improving clarity and accessibility for modern audiences. The identity combines typographic precision with a flexible graphic framework designed to support exhibitions, publications and digital communication. Photography:Sandijs Ruļuks",
   year: "2025",
   client: "Museum of Riga RVKM",
   images: [
@@ -156,13 +156,13 @@ images: [
   aspectRatio: "landscape"
 },
   {
-    id: "urban-nature",
+    id: "lielvards",
     title: "Lielvards",
-    tags: ["branding", "identity", "nature"],
-    subtitle: "Bridging urban design with natural elements",
-    description: "A branding project that explores the harmony between urban architecture and natural forms, creating a visual identity that celebrates the coexistence of city life and nature.",
+    tags: ["branding", "visual identity", "publishing"],
+    subtitle: "Visual identity for Latvia’s leading publishing house",
+    description: "Brand identity development for Lielvārds, one of Latvia’s most influential educational publishing houses. The visual system was designed to reflect the company’s role in shaping modern education while maintaining clarity and adaptability across books, digital learning platforms and corporate communication. The identity balances structured typography with a flexible visual framework suited for both educational and institutional contexts.",
     year: "2024",
-    client: "Urban Studio",
+    client: "Lielvārds",
   images: [
   VARDS1,
   VARDS4,
