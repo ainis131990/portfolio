@@ -1,3 +1,4 @@
+import placeholderImg from "@/assets/1.jpg"
 import VARDS1 from "@/assets/VARDS-1.jpg";
 import VARDS2 from "@/assets/VARDS-2.jpg";
 import VARDS3 from "@/assets/VARDS-3.jpg";
