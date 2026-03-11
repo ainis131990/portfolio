@@ -29,7 +29,7 @@ const ProjectIndex = () => {
 
   const filteredProjects = useMemo(() => {
     if (selectedCategory === "Archive") {
-      return projects;
+      return projects.filter(p => p.archiveOnly);
     }
     return projects.filter(p => !p.archiveOnly);
   }, [selectedCategory]);
