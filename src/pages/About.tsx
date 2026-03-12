@@ -22,15 +22,17 @@ const About = () => {
   }, [location]);
 
   const clients = [
-    "client",
-    "client",
-    "client",
-    "client",
-    "client",
-    "client",
-    "client",
-    "client",
-    "client"
+    "Mobilly",
+    "Merks",
+    "LIAA",
+    "Port of Riga",
+    "BluOr Bank",
+    "RTU",
+    "Latarh",
+    "Vizium",
+    "Lielvārds",
+    "Twino",
+    "Riga city"
   ];
 
   const services = [
