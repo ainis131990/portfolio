@@ -1,3 +1,4 @@
+import profilepic from "@/assets/profilepic-small.jpg"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
