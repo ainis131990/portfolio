@@ -69,8 +69,8 @@ const About = () => {
             <div className="flex items-start justify-center md:justify-start">
               <div className="w-32 h-32 rounded-full overflow-hidden bg-muted border border-border">
                 <img
-                  src="/placeholder.svg"
-                  alt="Profile"
+                   src={profilepic}
+                  alt="Ainis Permins"
                   className="w-full h-full object-cover"
                 />
               </div>
