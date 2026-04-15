@@ -109,7 +109,7 @@ export const projects: Project[] = [
       RO14,
       RO15,
       RO12,
-      RO06,
+      RO6,
       RO13,
       RO7,
       RO16
