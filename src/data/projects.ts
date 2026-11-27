@@ -248,10 +248,10 @@ images: [
     archiveOnly: true
   },
   {
-    id: "Latdev",
-    title: "Latvian agency for development",
+    id: "Lielvārds",
+    title: "Lielvārds",
     tags: ["branding", "visual identity"],
-    subtitle: "Visual identity proposal",
+    subtitle: "New visual identity design",
     description: "",
     year: "2023",
  images: [
