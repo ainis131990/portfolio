@@ -192,15 +192,15 @@ images: [
     client: "Sorsera",
   images: [
   SO1,
-  SO2,
-  SO3,
   SO4,
+  SO3,
+  SO2,
   SO5,
   SO6,
   SO7,
-  SO8,
+  SO10,
   SO9,
-  SO10
+  SO8
 ],
     color: "#10B981",
     aspectRatio: "portrait"
