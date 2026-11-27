@@ -193,14 +193,14 @@ images: [
   images: [
   SO1,
   SO4,
-  SO3,
-  SO2,
+  SO9,
+  SO8,
   SO5,
   SO6,
   SO7,
   SO10,
-  SO9,
-  SO8
+  SO3,
+  SO2
 ],
     color: "#10B981",
     aspectRatio: "portrait"
