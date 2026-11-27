@@ -109,9 +109,9 @@ export const projects: Project[] = [
     client: "Freeport of Riga Authority",
     images: [
       RO1,
-      RO2,
-      RO5,
       RO4,
+      RO5,
+      RO2,
       RO3,
       RO8,
       RO9,
