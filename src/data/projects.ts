@@ -73,6 +73,16 @@ import rvkm14 from "@/assets/rvkm-14.jpg";
 import rvkm15 from "@/assets/rvkm-15.jpg";
 import rvkm16 from "@/assets/rvkm-16.jpg";
 import rvkm17 from "@/assets/rvkm-17.jpg";
+import SO1 from "@/assets/SO-1.jpg"
+import SO2 from "@/assets/SO-2.jpg"
+import SO3 from "@/assets/SO-3.jpg"
+import SO4 from "@/assets/SO-4.jpg"
+import SO5 from "@/assets/SO-5.jpg"
+import SO6 from "@/assets/SO-6.jpg"
+import SO7 from "@/assets/SO-7.jpg"
+import SO8 from "@/assets/SO-8.jpg"
+import SO9 from "@/assets/SO-9.jpg"
+import SO10 from "@/assets/SO-10.jpg"
 
 export interface Project {
   id: string;
